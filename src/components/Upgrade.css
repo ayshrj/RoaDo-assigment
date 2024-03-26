@@ -1,0 +1,54 @@
+.upgrade {
+    font-family: "Inter-Regular";
+    width: 100%;
+    background-color: #282828;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 30px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.upgrade-text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.upgrade-text-title {
+    font-size: 28px;
+}
+
+.upgrade-text-subtitle {
+    font-family: "Inter-Light";
+    font-size: 14px;
+}
+
+.upgrade-button {
+    font-family: "Inter-Bold";
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.upgrade-button:hover {
+    background-color: lightgray;
+}
+
+@media only screen and (max-width: 508px) {
+    .upgrade {
+        justify-content: center;
+    }
+
+    .upgrade-button>div>svg {
+        fill: black;
+    }
+}
